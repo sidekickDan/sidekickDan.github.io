@@ -3219,3 +3219,9 @@ input, select, textarea {
 			}
 
 	}
+	
+/* CUSTOM CSS */
+
+h1, h2 {font-family:roboto slab, georgia;font-weight: bold;}
+.text_emphasized {color:#41d7ff;}
+.text_emphasized_yellow {color:#ffd623;}
