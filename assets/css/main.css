@@ -2204,7 +2204,7 @@ input, select, textarea {
 				padding-right: 0;
 			}
 
-			ul.icons li .icon:before {
+			ul.icons li .icon:before, ul.icons li .fa-solid:before {
 				font-size: 1.5em;
 			}
 
@@ -3046,7 +3046,7 @@ input, select, textarea {
 
 		/* List */
 
-			ul.icons li .icon {
+			ul.icons li .icon, ul.icons li {
 				font-size: 1.25em;
 			}
 
@@ -3231,4 +3231,13 @@ h1, h2 {font-family:roboto slab, georgia;font-weight: bold;}
 header.major h2 {
     line-height: 1.25;
     color: #0157c5;
+}
+ul.icons .fa-solid .label {display: none;text-decoration:none;}
+ul.icons li {text-decoration:none !important;}
+ul.copyright li {
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+    border-right: 1px solid #eee;
+    font-size: 15px;
 }
