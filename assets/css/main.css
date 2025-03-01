@@ -3233,8 +3233,9 @@ input, select, textarea {
     padding-left: 35px;
 }
 h1, h2 {font-family:roboto slab, georgia;font-weight: bold;}
-.text_emphasized {color:#41d7ff;}
-.text_emphasized_yellow {color:#ffd623;}
+.text_emphasized {color:#41d7ff;font-weight:bold;}
+.text_emphasized_yellow {color:#ffd623;font-weight:bold;}
+.text_emphasized_yellow_darker {color:#d2b000;font-weight:bold;}
 header.major h2 {
     line-height: 1.25;
     color: #0157c5;
