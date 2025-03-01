@@ -2593,7 +2593,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/nightsky.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg-computer.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								cover;
@@ -3221,7 +3221,10 @@ input, select, textarea {
 	}
 	
 /* CUSTOM CSS */
-
+#header img {width: 150px;border-radius:100px;}
+#header {text-align:left;}
+.text_title, .text_function, #header p {color:#ffffff;}
+.text_function{line-height:1.25; background: rgba(0, 0, 0, 0.4); padding: 15px;}
 h1, h2 {font-family:roboto slab, georgia;font-weight: bold;}
 .text_emphasized {color:#41d7ff;}
 .text_emphasized_yellow {color:#ffd623;}
