@@ -3249,6 +3249,11 @@ ul.copyright li {
     font-size: 15px;
 }
 
+.fa-globe {
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+
 p {
     color: #000;
     line-height: 1.5;
