@@ -3253,3 +3253,15 @@ p {
     color: #000;
     line-height: 1.5;
 }
+
+a.button {
+    background: #c3ddff;
+    color: #1a1fff !important;
+    line-height: 1;
+    height: auto;
+    padding: 10px;
+}
+
+ul.actions {
+    margin-bottom: 10px;
+}
