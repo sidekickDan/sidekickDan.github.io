@@ -3228,3 +3228,7 @@ input, select, textarea {
 h1, h2 {font-family:roboto slab, georgia;font-weight: bold;}
 .text_emphasized {color:#41d7ff;}
 .text_emphasized_yellow {color:#ffd623;}
+header.major h2 {
+    line-height: 1.25;
+    color: #0157c5;
+}
