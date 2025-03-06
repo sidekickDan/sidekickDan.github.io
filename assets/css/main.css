@@ -3305,7 +3305,43 @@ a.read-more:hover, a.show-less:hover {
     border-radius: 5px;
     font-weight: bold;
 }
+
+article {margin-bottom: 20px;}
+
 article ul li {
 	margin-left: 20px;
 	color: #000;
+}
+
+a.image.fit.thumb {
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.poptrox-popup {
+    overflow-y: auto;
+	
+}
+
+.poptrox-popup p{
+    text-align:left;
+	padding: 10px 25px;
+	margin-bottom:0px;
+}
+.poptrox-popup ul {
+	text-align:left;
+	padding:25px;
+	margin-left:15px;
+	
+}
+.poptrox-popup ul li{
+color:#000;
+	line-height:1.2;
+}
+
+.poptrox-popup strong{
+color:#0157c5;
 }

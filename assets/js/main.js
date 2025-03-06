@@ -99,7 +99,14 @@
 			$window.on('load', function() {
 
 				$('#two').poptrox({
-					caption: function($a) { return $a.next('h3').text(); },
+					caption: function($a) { 
+						let projectContainer = $a.closest('article'); // Find the project container
+						let title = projectContainer.find('h3').text(); // Get the title of the project
+						let content = projectContainer.find('.more-content').html(); // Get the hidden content
+
+						// If content is not empty, return it along with the title, otherwise display a fallback message
+						return "<strong>" + title + "</strong>" + (content && content !== "" ? content : "No additional details available.");
+					},
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
 					popupCloserText: '',
