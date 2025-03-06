@@ -3345,3 +3345,10 @@ color:#000;
 .poptrox-popup strong{
 color:#0157c5;
 }
+
+@media (max-width: 635px) {
+	a.image.fit.thumb {
+    float: none;
+    width: 100%;
+	}
+}
