@@ -11,6 +11,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://kit.fontawesome.com/484cb02f21.js" crossorigin="anonymous"></script>
+		
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -62,60 +70,36 @@
 					<section id="two">
 						<h2>Highlighted Projects</h2>
 						<div class="row">
-							<article class="col-12 col-12-xsmall work-item">
+							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+							<h3>Dermatology Clinic Website & UX Redesign</h3>
+
+							<p><strong>Business Problem: </strong>They were a growing dermatology group with a few locations. They needed an attractive patient-facing website. However, DIY solutions weren't working. In addition, options for building a website were limited.</p>
+							
+							<div id="more-content" style="display: none;">
+							<p><strong>Solution &amp; Outcomes: </strong>Collaborated with the COO and Marketing Teams of a large Pennsylvania-based dermatology clinic to develop a patient-facing website that enhances accessibility and user experience. Designed and implemented key features, including location search, appointment scheduling, bill payment, medical records requests, and job postings.</p> 
+							<p>Leveraged UX design principles and past data insights to ensure an intuitive interface. Led the installation, customization, and maintenance of a Joomla-based CMS, including database setup, server migrations, backup management, and troubleshooting. Independently managed project execution while maintaining direct communication with stakeholders to align with business objectives.</p>
+							<p>Since the initial build, they have grown to over 30 locations and serve patients over a large geographic area in Pennsylvania. Due to satisfaction with my work, throught the years, they have had me rebuild and modernize the website at least 3 times.</p>
+
+							<ul>
+							  <li>UX/UI Design & User Research</li>
+							  <li>Website Development & CMS Management (Joomla)</li>
+							  <li>Front-End Development (CSS Customization)</li>
+							  <li>Server Migration & Database Management</li>	
+							  <li>Project Management & Stakeholder Communication</li>
+							  <li>Troubleshooting & Problem-Solving</li>
+							</ul>
+
+							</div>
+							
+							<a href="javascript:void(0);" id="read-more" onclick="toggleContent(true)">Solution &amp; Outcomes</a>
+							<a href="javascript:void(0);" id="show-less" onclick="toggleContent(false)" style="display: none;">Show Less</a>
 
 
-<h3>Dermatology Clinic Website & UX Redesign</h3>
+							
 
-<p>
-  Collaborated with the COO and Marketing Teams of a large Pennsylvania-based dermatology clinic to develop a patient-facing website that enhances accessibility and user experience. Designed and implemented key features, including <strong>location search, appointment scheduling, bill payment, medical records requests, and job postings</strong>. 
-  <a href="#popup-project" class="read-more">Read More</a>
-</p>
 
-<ul>
-  <li>UX/UI Design & User Research</li>
-  <li>Website Development & CMS Management (Joomla)</li>
-  <li>Front-End Development (CSS Customization)</li>
-  <li>Server Migration & Database Management</li>
-  <li>Project Management & Stakeholder Communication</li>
-  <li>Troubleshooting & Problem-Solving</li>
-</ul>
 
-<!-- Hidden Popup Content -->
-<div id="popup-project" class="popup-content" style="display: none;">
-  <h3>Dermatology Clinic Website & UX Redesign</h3>
-  <p>
-    Leveraged <strong>UX design principles and past data insights</strong> to ensure an intuitive interface. Led the <strong>installation, customization, and maintenance</strong> of a Joomla-based CMS, including database setup, server migrations, backup management, and troubleshooting. Independently managed project execution while maintaining direct communication with stakeholders to align with business objectives.
-  </p>
-  <ul>
-    <li>UX/UI Design & User Research</li>
-    <li>Website Development & CMS Management (Joomla)</li>
-    <li>Front-End Development (CSS Customization)</li>
-    <li>Server Migration & Database Management</li>
-    <li>Project Management & Stakeholder Communication</li>
-    <li>Troubleshooting & Problem-Solving</li>
-  </ul>
-  <a href="#" class="popup-close">Close</a>
-</div>
-
-<script>
-  $(document).ready(function() {
-    $('.read-more').poptrox({
-      usePopupCaption: false,
-      popupCloserText: 'Close',
-      popupSpeed: 300,
-      overlayColor: '#000',
-      overlayOpacity: 0.8,
-      popupWidth: '80%',
-      popupHeight: 'auto'
-    });
-  });
-</script>
-<!-- Add these in your <head> or before closing </body> -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/poptrox/2.6.0/jquery.poptrox.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/poptrox/2.6.0/poptrox.min.css">
 
 
 							</article>
@@ -908,13 +892,22 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				</div>
 			</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script>
+			  function toggleContent(expand) {
+				var content = document.getElementById("more-content");
+				var readMore = document.getElementById("read-more");
+				var showLess = document.getElementById("show-less");
 
+				if (expand) {
+				  content.style.display = "inline";
+				  readMore.style.display = "none";
+				  showLess.style.display = "inline";
+				} else {
+				  content.style.display = "none";
+				  readMore.style.display = "inline";
+				  showLess.style.display = "none";
+				}
+			  }
+			</script>
 	</body>
 </html>
