@@ -3282,15 +3282,28 @@ h2,h3 {
     font-weight: bold;
     color: #0157c5;
 }
+h2 {
+    font-size: 2em;
+}
 
-a#read-more, a#show-less {
-    color: #0157c5;
+a.read-more, a.show-less {
+    color: #fff;
     text-decoration: none;
     border-bottom: none;
-    background: #eee;
+    background: #ffd623;
     padding: 5px 10px;
     border-radius: 5px;
+    font-weight: bold;
+}
 
+a.read-more:hover, a.show-less:hover {
+    color: #fff !important;
+    text-decoration: none;
+    border-bottom: none;
+    background: #d0a900;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 article ul li {
 	margin-left: 20px;

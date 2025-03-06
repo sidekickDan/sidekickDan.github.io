@@ -70,44 +70,59 @@
 					<section id="two">
 						<h2>Highlighted Projects</h2>
 						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-12 col-12-xsmall work-item">
 								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h3>Dermatology Clinic Website & UX Redesign</h3>
+								<h3>Website and UX Redesign for Large Dermatological Group</h3>
 
-							<p><strong>Business Problem: </strong>They were a growing dermatology group with a few locations. They needed an attractive patient-facing website. However, DIY solutions weren't working. In addition, options for building a website were limited.</p>
-							
-							<div id="more-content" style="display: none;">
-							<p><strong>Solution &amp; Outcomes: </strong>Collaborated with the COO and Marketing Teams of a large Pennsylvania-based dermatology clinic to develop a patient-facing website that enhances accessibility and user experience. Designed and implemented key features, including location search, appointment scheduling, bill payment, medical records requests, and job postings.</p> 
-							<p>Leveraged UX design principles and past data insights to ensure an intuitive interface. Led the installation, customization, and maintenance of a Joomla-based CMS, including database setup, server migrations, backup management, and troubleshooting. Independently managed project execution while maintaining direct communication with stakeholders to align with business objectives.</p>
-							<p>Since the initial build, they have grown to over 30 locations and serve patients over a large geographic area in Pennsylvania. Due to satisfaction with my work, throught the years, they have had me rebuild and modernize the website at least 3 times.</p>
+								<p><strong>Business Problem: </strong>They were a growing dermatology group with a few locations. They needed an attractive patient-facing website. However, DIY solutions weren't working. In addition, options for building a website were limited.</p>
+								
+								<div class="more-content" id="derm-content" style="display: none;">
+								<p><strong>Solution &amp; Outcomes: </strong>Collaborated with the COO and Marketing Team of a large Pennsylvania-based dermatology clinic to develop a patient-facing website that enhances accessibility and user experience. Designed and implemented key features, including location search, appointment scheduling, bill payment, medical records requests, and job postings.</p> 
+								<p>Leveraged UX design principles and past data insights to ensure an intuitive interface. Led the installation, customization, and maintenance of a Joomla-based CMS, including database setup, server migrations, backup management, and troubleshooting. Independently managed project execution while maintaining direct communication with stakeholders to align with business objectives.</p>
+								<p>Since the initial build, they have grown to over 30 locations and serve patients over a large geographic area in Pennsylvania. Due to satisfaction with my work, through the years, they have had me rebuild and modernize the website at least 3 times.</p>
 
-							<ul>
-							  <li>UX/UI Design & User Research</li>
-							  <li>Website Development & CMS Management (Joomla)</li>
-							  <li>Front-End Development (CSS Customization)</li>
-							  <li>Server Migration & Database Management</li>	
-							  <li>Project Management & Stakeholder Communication</li>
-							  <li>Troubleshooting & Problem-Solving</li>
-							</ul>
+								<ul>
+								  <li>UX/UI Design & User Research</li>
+								  <li>Website Development & CMS Management (Joomla)</li>
+								  <li>Front-End Development (CSS Customization)</li>
+								  <li>Server Migration & Database Management</li>	
+								  <li>Project Management & Stakeholder Communication</li>
+								  <li>Troubleshooting & Problem-Solving</li>
+								</ul>
 
-							</div>
-							
-							<a href="javascript:void(0);" id="read-more" onclick="toggleContent(true)">Solution &amp; Outcomes</a>
-							<a href="javascript:void(0);" id="show-less" onclick="toggleContent(false)" style="display: none;">Show Less</a>
-
-
-							
-
-
-
-
+								</div>
+								
+								<a href="javascript:void(0);" class="read-more" data-target="derm-content">Solution &amp; Outcomes</a>
+								<a href="javascript:void(0);" class="show-less" data-target="derm-content" style="display: none;">Show Less</a>
 
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							
+							<article class="col-12 col-12-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<h3>Volunteer Data Management System for Large Events</h3>
+
+								<p><strong>Business Problem: </strong>A volunteer organization needed a way to gather, store, and track information for hundreds of volunteers assisting with three large annual events. Departments manually submitted volunteer lists in inconsistent formats, leading to inaccurate data transfer and inefficiencies. Additionally, there was no budget for a sophisticated data management system.</p>
+
+								<div class="more-content" id="volunteer-content" style="display: none;">
+								  <p><strong>Solution &amp; Outcomes: </strong>Developed a streamlined volunteer data management system using Google Forms, Sheets, and Drive, ensuring data consistency and accessibility. Designed an intuitive workflow for volunteers to submit availability and qualifications, enabling event organizers to vet participants efficiently.</p>
+								  <p>Standardized data collection across all departments, reducing errors and enhancing usability. Implemented Google Query functions to merge and join data from multiple sources, providing a comprehensive view of volunteer status. Assisted departments in customizing their recruitment forms to capture specialized information.</p>
+								  <p>Due to its effectiveness, the system has been fully adopted across the local chapter of the organization, improving event planning and departmental coordination. Additionally, migrated some data management functions to a standalone website to better serve the needs of one of the larger departments.</p>
+
+								  <ul>
+									<li>Data Management & Process Automation</li>
+									<li>Google Suite (Forms, Sheets, Drive, Queries)</li>
+									<li>Workflow Optimization & Standardization</li>
+									<li>Volunteer Coordination & Recruitment Tracking</li>
+									<li>Custom Form Development & Data Merging</li>
+									<li>Website Integration for Expanded Functionality</li>
+								  </ul>
+								</div>
+
+								<a href="javascript:void(0);" class="read-more" data-target="volunteer-content">Solution &amp; Outcomes</a>
+								<a href="javascript:void(0);" class="show-less" data-target="volunteer-content" style="display: none;">Show Less</a>
+
 							</article>
+							
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
 								<h3>Tortor metus commodo</h3>
@@ -132,7 +147,31 @@
 						<ul class="actions">
 							<li><a href="#" class="button">Full Portfolio</a></li>
 						</ul>
-					</section>
+						
+						<script>
+						document.addEventListener("DOMContentLoaded", function () {
+							document.querySelectorAll(".read-more").forEach(function (button) {
+								button.addEventListener("click", function () {
+									var target = document.getElementById(this.getAttribute("data-target"));
+									var showLess = this.nextElementSibling;
+									target.style.display = "block";
+									this.style.display = "none";
+									showLess.style.display = "inline";
+								});
+							});
+
+							document.querySelectorAll(".show-less").forEach(function (button) {
+								button.addEventListener("click", function () {
+									var target = document.getElementById(this.getAttribute("data-target"));
+									var readMore = this.previousElementSibling;
+									target.style.display = "none";
+									this.style.display = "none";
+									readMore.style.display = "inline";
+								});
+							});
+						});
+						</script
+											</section>
 
 				<!-- Three -->
 					<section id="three">
